@@ -1,9 +1,6 @@
+
 // Import Google fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-
-// Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -14,3 +11,19 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family: 'Calluna-Regular';
+  src: font-url('367E80_0_0.eot');
+  src: font-url('367E80_0_0.eot?#iefix') format('embedded-opentype'),
+    font-url('367E80_0_0.woff2') format('woff2'),
+    font-url('367E80_0_0.woff') format('woff'),
+    font-url('367E80_0_0.ttf') format('truetype');
+}
+
+
+// Define fonts for body and headers
+$headers-font: "Calluna-Regular";
+$body-font: "Raleway", "Helvetica", "sans-serif";
+
+

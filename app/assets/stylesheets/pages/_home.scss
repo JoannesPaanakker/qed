@@ -1,1 +1,32 @@
 // Specific CSS for your home-page
+.info-header {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: $new_blue;
+}
+
+.info-header p {
+  margin-top: 30px;
+}
+
+.home-page-header {
+  font-family: Calluna-Regular;
+  font-size: 5.2vh;
+  color: #fafaff;
+  width: 100%;
+}
+
+.banner {
+  padding: 50px 10px 20px 10px;
+  height: 425px;
+  background-image: url("hero_pattern.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+a {
+  color: $qed;
+}

@@ -12,4 +12,28 @@
 // Your CSS partials
 @import "layouts/index";
 @import "components/index";
+@import "components/navbar";
 @import "pages/index";
+
+body {
+  color: #081b33;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #fafaff;
+}
+
+h1 {
+  color: $qed;
+}
+
+h2 {
+  color: $qed;
+}
+
+h3 {
+  color: $qed;
+}
+
+h4 {
+  color: $qed;
+}
