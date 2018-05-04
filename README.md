@@ -1,1 +1,1 @@
-RoR code of www.qedwebdevelopment.com
+Ruby on Rails project for: www.qedwebdevelopment.com
