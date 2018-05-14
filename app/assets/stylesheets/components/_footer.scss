@@ -1,0 +1,25 @@
+.footer {
+  margin: 25px;
+  // margin-left: 25px;
+  // margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-header-foot {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: $new_blue;
+}
+
+.info-header-foot-text {
+  font-size: 12px;
+}
+
+.footer-list {
+  margin-top: 25px;
+  margin-left: 35px;
+}
