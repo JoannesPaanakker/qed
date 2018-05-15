@@ -4,11 +4,23 @@
       <%= image_tag "QED-2.jpg" %>
     <% end %>
     <div class="navbar-wagon-right hidden-xs ">
-      <%= link_to "home", root_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
-      <%= link_to "showcases", products_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
-      <%= link_to "way of working", team_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% if @page == "home" %>
+        <%= link_to "home", root_path, class: "navbar-wagon-item navbar-wagon-link navbar-item-selected" %>
+      <% else %>
+        <%= link_to "home", root_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% end %>
+      <% if @page == "products" %>
+        <%= link_to "showcases", products_path, class: "navbar-wagon-item navbar-wagon-link navbar-item-selected" %>
+      <% else %>
+        <%= link_to "showcases", products_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% end %>
+      <% if @page == "team" %>
+        <%= link_to "way of working", team_path, class: "navbar-wagon-item navbar-wagon-link navbar-item-selected" %>
+      <% else %>
+        <%= link_to "way of working", team_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% end %>
       <%= link_to nl_path, class: "navbar-wagon-brand" do %>
-        &#127475&#127473
+        &#127475&#127473<span class="info-header">NL</span>
       <% end %>
     </div>
     <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg">
@@ -20,7 +32,7 @@
           <li><%= link_to "our way of working", team_path, class: "navbar-wagon-item navbar-wagon-link info-header" %></li>
           <li>
             <%= link_to nl_path, class: "navbar-wagon-brand" do %>
-              &#127475&#127473
+              &#127475&#127473  NL
             <% end %>
           </li>
         </ul>
@@ -31,11 +43,23 @@
       <%= image_tag "QED-2.jpg" %>
     <% end %>
     <div class="navbar-wagon-right hidden-xs ">
-      <%= link_to "home", nl_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
-      <%= link_to "showcases", producten_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
-      <%= link_to "werkwijze", nlteam_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% if @page == "nl" %>
+        <%= link_to "home", nl_path, class: "navbar-wagon-item navbar-wagon-link navbar-item-selected" %>
+      <% else %>
+        <%= link_to "home", nl_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% end %>
+      <% if @page == "producten" %>
+        <%= link_to "showcases", producten_path, class: "navbar-wagon-item navbar-wagon-link navbar-item-selected" %>
+      <% else %>
+        <%= link_to "showcases", producten_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% end %>
+      <% if @page == "nlteam" %>
+        <%= link_to "werkwijze", nlteam_path, class: "navbar-wagon-item navbar-wagon-link navbar-item-selected" %>
+      <% else %>
+        <%= link_to "werkwijze", nlteam_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      <% end %>
       <%= link_to root_path, class: "navbar-wagon-brand" do %>
-        &#127468&#127463
+        &#127468&#127463<span class="info-header">English</span>
       <% end %>
     </div>
     <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg">
@@ -47,7 +71,7 @@
           <li><%= link_to "werkwijze", nlteam_path, class: "navbar-wagon-item navbar-wagon-link info-header" %></li>
           <li>
             <%= link_to root_path, class: "navbar-wagon-brand" do %>
-              &#127468&#127463
+              &#127468&#127463 English
             <% end %>
           </li>
         </ul>

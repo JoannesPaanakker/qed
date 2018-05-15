@@ -1,1 +1,83 @@
-nlteam.html.erb
+<div class="wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+
+        <div class="text-box1">
+          <h3>Ruby on Rails en Open Source</h3>
+          Hoewel er voldoende commerci&#235le platforms beschikbaar zijn om apps en websites te bouwen heeft QEDWebDevelopment ervoor gekozen te werken met Open Source ontwikkelplatformen en dan specifiek Ruby on Rails.
+          De belangrijkste redenen hiervoor zijn:
+          <br>
+          <br>
+          <ul>
+            <li>Transparantie en overdraagbaarheid van sourcecode. Door gebruik te maken van Open Source zijn de producten die wij bouwen - na oplevering - volledig overdraagbaar naar derden. Wij gebruiken zelf het GitHub (<%= link_to "GitHub", "https://github.com/", class: "info-header" %>) platform voor onze eigen software ontwikkeling, maar vanzelfsprekend kan men kiezen voor een ander GIT platform (bitbucket) of een eigen systeem. </li>
+            <li>Geen licentiekosten. Er is geen sprake van licentiekosten bij het gebruik van Open Source. Na oplevering zijn de terugkerende kosten beperkt tot de zogenaamde Hostingservices (Heroku, Digital Ocean, Amazon) en amdinistratieve kosten voor domeinnamen. Het is natuurlijk mogelijk om een onderhoudscontract af te sluiten, zodat noodzakelijke upgrades worden uitgevoerd, maar dit geld vaak ook voor commerci&#235le platforms (naast abonnementskosten).</li>
+            <li>Geen "Vendor Lock in". Er is geen afhankelijkheid van een specifieke softwareleverancier: dit geeft maximale vrijheid voor verdere ontwikkelingen in de toekomst.</li>
+            <li>Toekomstvast: Met een groeiende installed base en developersgemeenschap is ondersteuning voor de toekomst gegarandeerd. Vanwege de totale transparantie van het platform is een eventuele migratie van sourcecode naar nieuwe platforms altijd mogelijk. Bovendien zijn ontwikkelingen van OpenSource omgevingen makkelijk te volgen, dus men komt niet voor verrassingen te staan.</li>
+          </ul>
+          De keuze voor Ruby on Rails (RoR) is enigszins arbitrair: er zijn andere Open Source frameworks beschikbaar (zoals Laravel/PHP) die vergelijkbare functionaliteit bieden. Het RoR framework is al een paar jaar bezig aan een opmars, zowel wat betreft installed base als developergemeenschap en het is naar onze mening op dit moment de beste keuze.
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="showcase-link">
+          <a href="https://opensource.org/">
+            <%= image_tag "opensource-logo.png", class: "img-responsive"%>
+            <a href="https://opensource.org/"> <span class="info-header">GoTo:</span>Open Source Initiative</a>
+          </a>
+        </div>
+        <br>
+        <br>
+        <div class="showcase-link">
+          <a href="https://rubyonrails.org/">
+            <%= image_tag "ruby-on-rails.jpg", class: "img-responsive image-logo"%>
+            <a href="https://rubyonrails.org/"> <span class="info-header">GoTo:</span>Ruby on Rails</a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="row-hr">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="text-box1">
+          <h3>Front End (HTML/CSS/JS), Back End (RoR), Databases (SQL), API's: Full Stack.</h3>
+          QEDWebDevelopment heeft kennis van en ervaring met het ontwikkelen van alle lagen van de zogenaamde "stack".
+          Dat betekent dat wij ook op onderdelen (alleen Back End of alleen Front End) gebruikers van dienst kunnen zijn. Bij heel bijzondere eisen of wensen, werken we samen met developers die daarin gespecialiseerd zijn.
+          Met name voor specifieke Front End eisen op het gebied van logo-ontwerp, kleurstellingen en huisstijl, maken wij gebruik van professionele ontwerpers.
+          Wij helpen u graag - geheel vrijblijvend - met het bepalen van uw behoeftes en de daaruit volgende in te zetten technieken, dus neem vooral contact met ons op via onderstaande media.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="showcase-link">
+          <%= image_tag "full-stack.png", class: "img-responsive"%>
+        </div>
+      </div>
+    </div>
+    <hr class="row-hr">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="text-box1">
+          <h3>Hosting en Domeinnaamregistratie</h3>
+          Wij helpen u graag bij de keuze van een Hostingservice en het eventuele aanvragen van domeinnamen. QEDWebDevelopment levert zelf geen Hosting services en voert geen domeinnaam administratie, daar zijn namelijk voldoende alternatieven voor.
+          Onze eigen software draait op het Heroku platform, maar mocht het - vanwege specifieke eisen ten aanzien van kosten of functionaliteit - nodig zijn, kunnen wij alternatieven voordragen.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="showcase-link">
+          <a href="https://www.heroku.com">
+            <%= image_tag "heroku.png", class: "img-responsive"%>
+            <a href="https://www.heroku.com"> <span class="info-header">GoTo:</span>Heroku</a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="row-hr">
+  </div>
+</div>
+<%= render 'shared/footer' %>
+
+
