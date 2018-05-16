@@ -1,4 +1,80 @@
-<div class="text-box1">
-  <h3>We take Web Development to a new level</h3>
-  The main force on the QED team is IT veteran J. Alfons Paanakker. After a full career moving from Cobol programming, via PC-network engineering to ProjectManagement and general management positions in several IT Consultancy Companies he decided tot move back into the real business: Web Development.
+<div class="wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="text-box1">
+          <h3>Ruby on Rails and Open Source</h3>
+          Although there are enough commercial platforms available to build apps and websites, QED WebDevelopment has chosen to work with Open Source development platforms and specifically the Ruby on Rails framework.
+          The main reasons are:
+          <br>
+          <br>
+          <ul>
+            <li>Transparency and portability of source code. By using Open Source, the products we build are fully transferable to third parties. We ourselves use the GitHub (<%= link_to "GitHub", "https://github.com/", class: "info-header"%>) platform for our own software development, but a user can choose another GIT platform (bitbucket) or an internal system.</li>
+
+            <li>No license fees. There is no license fee for the use of Open Source software. After delivery, recurring costs are limited to Hosting services (like Heroku, Digital Ocean or Amazon) and administrative costs for registration of domain names. It is of course possible to conclude a maintenance contract to implement any necessary upgrades, but this often also applies to commercial platforms (in addition to subscription costs).</li>
+
+            <li>No "Vendor Lock in". No dependency on a specific software supplier: therefor maximum flexibility for developments in the future.</li>
+
+            <li>Future Proof: A growing installed base of Open Source systems and an ever increasing number of developers in the Open Source community are a guarantee for future support. Due to the total transparency of the platform migration to other platforms is always a viable option and new developments - or the lack of these - will never come as a surprise.</li>
+          </ul>
+          Choosing Ruby on Rails (RoR) is more or less arbitrary: there are other Open Source frameworks available (such as Laravel / PHP) that offer similar functionality. The RoR framework has been on the rise for a number of years, both in terms of installed base and developer community. In our opinion it is currently the best option when looking at Open Source frameworks.
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="showcase-link">
+          <a href="https://opensource.org/">
+            <%= image_tag "opensource-logo.png", class: "img-responsive"%>
+            <a href="https://opensource.org/"> <span class="info-header">GoTo:</span>Open Source Initiative</a>
+          </a>
+        </div>
+        <br>
+        <br>
+        <div class="showcase-link">
+          <a href="https://rubyonrails.org/">
+            <%= image_tag "ruby-on-rails.jpg", class: "img-responsive image-logo"%>
+            <a href="https://rubyonrails.org/"> <span class="info-header">GoTo:</span>Ruby on Rails</a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="row-hr">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="text-box1">
+          <h3>Front End (HTML/CSS/JS), Back End (RoR), Databases (SQL), API's: Full Stack.</h3>
+          QED WebDevelopment works with all layers in the "stack". This means we can also be of service when there's need for development on any specific layer. In case of specific demands we work with freelance developers: specialists on that subject.
+          Especifically for Front End requirements like logo design and corporate identity, we team up with partners.
+          We are happy to help you determine your needs, so please contact us via the media below. (no strings attached)</div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="showcase-link">
+          <%= image_tag "full-stack.png", class: "img-responsive"%>
+        </div>
+      </div>
+    </div>
+    <hr class="row-hr">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="text-box1">
+          <h3>Hosting and Domain name registration</h3>
+          We support you choosing the right Hosting service and registering your domain name if applicable. QED WebDevelopment does not provide Hosting services or domain name registration.
+          We use the Heroku platform for our software deployment, but are perfectly happy and able to advise on alternatives in case of specific demands (functional or financial).
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="showcase-link">
+          <a href="https://www.heroku.com">
+            <%= image_tag "heroku.png", class: "img-responsive"%>
+            <a href="https://www.heroku.com"> <span class="info-header">GoTo:</span>Heroku</a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="row-hr">
+  </div>
 </div>
+<%= render 'shared/footer' %>

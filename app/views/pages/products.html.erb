@@ -1,19 +1,18 @@
 <div class="wrapper">
-  <h1>Showcases</h1>
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-8">
         <div class="text-box1">
-          <h3>Basis website (incusief CMS)</h3>
-          Een basis website met "statische" HTML pagina's en een "Content Management System" (CMS) dat u in staat stelt zelf op eenvoudige wijze de teksten en/of beelden aan te passen. Deze website (QED WebDevelopment.com) is daar een voorbeeld van. Het CMS is vanzelfspekend alleen beschikbaar door middel van een beveiligd administratie-account.
-          Zoals beschreven staat op de LINK_TO_NLTEAM pagina, leveren wij de sourcecode en zorgen voor de installatie (deployment) op het Heroku platform, inclusief koppeling met uw domeinnaam.
+          <h3>Basic Website (including CMS)</h3>
+          A basic Website with "static" HTML pages and a Content Management System (CMS) which allows the owner to change text and/or images via a user friendly web interface. This website (www.QEDWebDevelopment.com) is an example. The CMS is obviously protected by a user-password login. As described on the <%= link_to "way we work", team_path, class: "info-header" %> page, we take care of deployment on a hosting service and connection to your domain.
+          The sourcecode of this website is available on GitHub here: <a href="https://github.com/QEDWebDevelopoment">GitHub.com/QEDWebDevelopment</a>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
         <div class="showcase-link">
           <a href="https://www.qedwebdevelopment.com/">
             <%= image_tag "QEDWD.jpg", class: "img-responsive"%>
+            <a href="https://www.qedwebdevelopment.com/"> <span class="info-header">GoTo:</span>QED WebDevelopment</a>
           </a>
         </div>
       </div>
@@ -24,14 +23,15 @@
     <div class="row">
       <div class="col-xs-12 col-sm-8">
         <div class="text-box1">
-        <h3>Dynamische Website met meerdere gebruikers (usermanagement)</h3>
-        Een dynamische website met een login functie voor meerdere gebruikers. Dit kan een gesloten gemeenschap zijn, waarbij nieuwe gebruikers alleen via een admin-functie worden toegevoegd, of een open systeem waar accounts door iedereen aangemaakt kunnen worden. Deze showcase (een eenvoudige variant van AirBnB: Yacht bnb) is een voorbeeld van het laatste: eenieder kan een account aanmaken en gebruik maken van de "Yacht experience".
+        <h3>Interactive Website with usermanagement</h3>
+        An interactive website handling user login functions. This could be a closed community, where an admin function adds and changes accounts or an open system allowing account creation online. This demo-site (a simple clone of AirBnB: Yacht BnB) is an example of an open system: anybody can join and enjoy a “Yacht experience”.
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
         <div class="showcase-link">
           <a href="https://clonebnb-batch126.herokuapp.com/">
             <%= image_tag "yacht-bnb.jpg", class: "img-responsive"%>
+            <a href="https://clonebnb-batch126.herokuapp.com/"> <span class="info-header">GoTo:</span>Yacht experience</a>
           </a>
         </div>
       </div>
@@ -42,14 +42,15 @@
     <div class="row">
       <div class="col-xs-12 col-sm-8">
         <div class="text-box1">
-          <h3>Dynamische Website met marktplaats en meerdere gebruikers</h3>
-          De combinatie van meerdere gebruikers (community) en de mogelijkheid om zaken te verkopen en/of kopen is een veelgevraagd concept (digitale marktplaats). Hier komen een aantal technieken samen en wordt het dus ook complexer. Deze showcase is een prototype van een digitale marktplaats waar de nieuwste "limited edition" sneakers verhandeld kunnen worden.
+          <h3>Interactive Website with marketplace and multiple users</h3>
+          The combination of multiple users (community) and the possibility of selling and/or buying items is a well-known concept on the web. The combination of functions adds complexity to the site. This demo-site is a prototype of a digital marketplace to trade “limited edition” sneakers.
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
         <div class="showcase-link">
           <a href="https://trade99.herokuapp.com/">
             <%= image_tag "trade.jpg", class: "img-responsive"%>
+            <a href="https://trade99.herokuapp.com/"> <span class="info-header">GoTo:</span>Sneaker Marketplace</a>
           </a>
         </div>
       </div>
@@ -60,14 +61,15 @@
     <div class="row">
       <div class="col-xs-12 col-sm-8">
         <div class="text-box1">
-        <h3>API backend server</h3>
-        Hoewel minder geschikt als showcase op een visueel ingestelde website als deze, geven we toch een voorbeeld van een zogenaamde "API backend" webserver. Dit is een Ruby on Rails applicatie die met behulp van een beschreven API gebruikt kan worden door verschillende "Clients". Een Client kan in een Webbrowser draaien (bijvoorbeeld REACT), maar kan ook een Android of IOS app zijn. Door het loskoppelen van Front End en Back End wordt maximale flexibiliteit gegeven aan ontwikkelaars (met name de Front End). De sourcecoden en API beschrijving is beschikbaar op Github: <a href="https://github.com/QEDWebDevelopoment/fearsetting2">https://github.com/QEDWebDevelopoment/fearsetting2</a>.
+        <h3>API Back End server</h3>
+        Although not really suited for a graphical interface like this, we want to show an example of an “API Back End” server. This Ruby on Rails (RoR) app can be accessed by custom built browser clients (React) and Android of IOS apps. This Back End API interface allows for maximum flexibility in developing a user interface. The source code and API instructions are available on GitHub: <a href="https://github.com/QEDWebDevelopoment">github.com/QEDWebDevelopment</a>.
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
         <div class="showcase-link">
           <a href="https://fearsetting.herokuapp.com/">
             <%= image_tag "Fearsetting.jpg", class: "img-responsive"%>
+            <a href="https://fearsetting.herokuapp.com/"> <span class="info-header">GoTo:</span>API backend server "Fear Setting"</a>
           </a>
         </div>
       </div>
@@ -76,9 +78,3 @@
   <hr class="row-hr">
 </div>
 <%= render 'shared/footer' %>
-
-
-
-
-
-
