@@ -1,35 +1,92 @@
-<div class="banner">
+<div class="text-box1">
+  <h4>Wij bouwen uw website, prototype of app...</h4>
+</div>
+<div id="myCarousel" class="carousel slide carousel-wrapper" data-ride="carousel">
+<!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+<!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="kkk">
+        <%= image_tag "QED_home_nl_text.jpg", class: "carousel-img" %>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="kkk">
+          <%= image_tag "GP.jpg", class: "carousel-img" %>
+      </div>
+      <div class="carousel-caption">
+        The Greenplatform
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="kkk">
+          <%= image_tag "trade.jpg", class: "carousel-img"%>
+      </div>
+    </div>
+    <div class="item">
+      <div class="kkk">
+          <%= image_tag "arus.jpg", class: "carousel-img" %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="kkk">
+          <%= image_tag "Fearsetting.jpg", class: "carousel-img"%>
+      </div>
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- <div class="banner">
   <p class="info-header">
     QED WebDevelopment
   </p>
   <div class="home-page-header">
     Full Stack Web development <br>
-Ruby on Rails, HTML/CSS <br> JavaScript, SQL <br>
+PHP, Ruby, HTML/CSS <br> JavaScript, SQL <br>
 + meer .....
   </div>
-</div>
+</div> -->
 <div class="container custom-container">
   <div class="row">
     <div class="col-xs-12 col-sm-8">
       <div class="text-box1">
-        <h3>Wij bouwen uw website en app met de nieuwste internettechnieken</h3>
+        <h4>.... met de nieuwste internettechnieken</h4>
         De technologische ontwikkelingen op het internet volgen elkaar in een hoog tempo op. QED WebDevelopment volgt deze ontwikkelingen op de voet en bouwt of verbouwt uw website met behulp van deze technieken en zorgt er dus voor dat u optimaal gebruik maakt van de mogelijkheden van het WEB.
       </div>
       <div class="text-box1">
-      Lees meer over onze producten en diensten:<%= link_to "showcases", producten_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      Lees meer over onze producten en diensten:<%= link_to "showcases", producten_path, class: "navbar-item navbar-link navbar-item" %>
       <br>
-      en onze manier van werken: <%= link_to "werkwijze", nlteam_path, class: "navbar-wagon-item navbar-wagon-link navbar-item" %>
+      en onze manier van werken: <%= link_to "werkwijze", nlteam_path, class: "navbar-item navbar-link navbar-item" %>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
       <div class="text-box1">
-        <h3>Meer weten?</h3>
+        <h4>Contact</h4>
         <div class="info-header">&#128231 eMail</div>
         <p>
           <a href="mailto:paanakker@qedwebdevelopment.com?subject=Request for information">Paanakker@QEDWebDevelopment.com</a>
         </p>
         <div class="info-header">&#9742 telefoon</div>
-        <p>+ 31 614405533</p>
+        <p>+ 31(0)614405533</p>
         <div class="info-header">
           <i class="fa fa-github"></i>
           GitHub
