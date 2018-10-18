@@ -1,5 +1,11 @@
-<div class="text-box1">
-  <h4>Wij bouwen uw website, prototype of app...</h4>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="text-box1">
+        <h4>Wij bouwen uw website, startup prototype of app...</h4>
+      </div>
+    </div>
+  </div>
 </div>
 <div id="myCarousel" class="carousel slide carousel-wrapper" data-ride="carousel">
 <!-- Indicators -->
@@ -14,33 +20,30 @@
 <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <div class="kkk">
-        <%= image_tag "QED_home_nl_text.jpg", class: "carousel-img" %>
+      <div class="item-inner">
+        <%= link_to "", producten_path, class: "carousel-item carousel-item1-nl" %>
       </div>
     </div>
 
     <div class="item">
-      <div class="kkk">
-          <%= image_tag "GP.jpg", class: "carousel-img" %>
-      </div>
-      <div class="carousel-caption">
-        The Greenplatform
+      <div class="item-inner">
+        <%= link_to "", producten_path, class: "carousel-item carousel-item2" %>
       </div>
     </div>
 
     <div class="item">
-      <div class="kkk">
-          <%= image_tag "trade.jpg", class: "carousel-img"%>
+      <div class="item-inner">
+        <%= link_to "", producten_path, class: "carousel-item carousel-item3" %>
       </div>
     </div>
     <div class="item">
-      <div class="kkk">
-          <%= image_tag "arus.jpg", class: "carousel-img" %>
+      <div class="item-inner">
+        <%= link_to "", producten_path, class: "carousel-item carousel-item4" %>
       </div>
     </div>
     <div class="item">
-      <div class="kkk">
-          <%= image_tag "Fearsetting.jpg", class: "carousel-img"%>
+      <div class="item-inner">
+        <%= link_to "", producten_path, class: "carousel-item carousel-item5" %>
       </div>
     </div>
   </div>
@@ -54,23 +57,12 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<!-- <div class="banner">
-  <p class="info-header">
-    QED WebDevelopment
-  </p>
-  <div class="home-page-header">
-    Full Stack Web development <br>
-PHP, Ruby, HTML/CSS <br> JavaScript, SQL <br>
-+ meer .....
-  </div>
-</div> -->
-<div class="container custom-container">
+<div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-8">
       <div class="text-box1">
         <h4>.... met de nieuwste internettechnieken</h4>
-        De technologische ontwikkelingen op het internet volgen elkaar in een hoog tempo op. QED WebDevelopment volgt deze ontwikkelingen op de voet en bouwt of verbouwt uw website met behulp van deze technieken en zorgt er dus voor dat u optimaal gebruik maakt van de mogelijkheden van het WEB.
+        De technologische ontwikkelingen op het internet volgen elkaar in een hoog tempo op. QED WebDevelopment volgt deze ontwikkelingen op de voet en bouwt uw website, app of startup-prototype met behulp van deze technieken en zorgt er dus voor dat u optimaal gebruik maakt van de mogelijkheden van het internet.
       </div>
       <div class="text-box1">
       Lees meer over onze producten en diensten:<%= link_to "showcases", producten_path, class: "navbar-item navbar-link navbar-item" %>

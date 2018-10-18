@@ -17,6 +17,5 @@ Rails.application.routes.draw do
   get 'nl', to: 'pages#nl', as: :nl
   get 'nlteam', to: 'pages#nlteam', as: :nlteam
   get 'producten', to: 'pages#producten', as: :producten
-  get 'nlcontact', to: 'pages#nlcontact', as: :nlcontact
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
